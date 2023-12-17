@@ -7,8 +7,12 @@ export const binarySearch = (arr: number[], num: number) => {
 
     if (arr[middle] < num) {
       min = middle + 1;
-    } else if (arr[middle] > num) max = middle - 1;
-    else return middle;
+    } else if (arr[middle] > num) {
+      max = middle - 1;
+    } else {
+      return middle;
+    }
   }
+  //   if nothing found, return -1 since the element doesn't exists in the array
   return -1;
 };
