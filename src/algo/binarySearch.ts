@@ -1,14 +1,22 @@
-export const binarySearch = (arr: number[], num: number) => {
-  let min = 0;
-  let max = arr.length - 1;
+export const binarySearch = (arr: number[], target: number) => {
+  let left = 0;
+  let right = arr.length - 1;
+  let middle = Math.floor((left + right) / 2);
 
-  while (min <= max) {
-    const middle = Math.floor((min + max) / 2);
+  while (arr[middle] !== target && left <= right) {
+    if (arr[middle] < target) left = middle + 1;
+    else right = middle - 1;
 
-    if (arr[middle] < num) {
-      min = middle + 1;
-    } else if (arr[middle] > num) max = middle - 1;
-    else return middle;
+    // update middle pointer,
+    // otherwise middle will be static
+    middle = Math.floor((left + right) / 2);
   }
-  return -1;
+
+  return arr[middle] === target ? middle : -1;
+  //   if nothing found, return -1 since the element doesn't exists in the array
 };
+
+// binarySearch([1, 2, 3, 5, 6, 9, 15, 19], 9);
+
+// [1, 2, 3, 5, 6, 9, 15, 19]
+//  l        m             r
