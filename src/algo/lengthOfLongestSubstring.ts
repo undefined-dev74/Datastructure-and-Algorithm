@@ -8,7 +8,6 @@ export const lengthOfLongestSubstring = (str: string) => {
   let result = 0;
 
   for (let i = 0; i < str.length; i++) {
-    console.log("dsd", charSet.has(str[i]));
     while (charSet.has(str[i])) {
       charSet.delete(str[left]);
       left += 1;

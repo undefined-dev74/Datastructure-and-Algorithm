@@ -5,6 +5,7 @@ import { frequencyCounter } from "./algo/freqeuncyCounter";
 import { insertionSort } from "./algo/insertionSort";
 import { lengthOfLongestSubstring } from "./algo/lengthOfLongestSubstring";
 import { maxSubArraySum } from "./algo/maxSubArraySum";
+import { naiveSearch } from "./algo/naiveSearch";
 import { selection_sort } from "./algo/selectionSort";
 
 function App() {
@@ -14,8 +15,10 @@ function App() {
   bubble_sort(unsortedArray);
   console.log(frequencyCounter([1, 2, 3], [1, 4, 9]));
   console.log(maxSubArraySum(unsortedArray, 1));
-  console.log(binarySearch(unsortedArray, 12));
+  console.log(binarySearch([1, 2, 3, 5, 6, 9, 15, 19], 32));
+
   lengthOfLongestSubstring("abcdbaacvbcc");
+  console.log(naiveSearch("abclolabc", "abc"));
   return (
     <>
       <h1>Vite + React</h1>
