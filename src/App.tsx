@@ -11,6 +11,7 @@ import { quickSort } from "./algo/quickSort";
 import { radixSort } from "./algo/radixSort";
 import { recursiveBubbleSort } from "./algo/recursiveBubbleSort";
 import { selection_sort } from "./algo/selectionSort";
+import { secondLargestElement } from "./leetcode/secondLargestElement";
 
 function App() {
   const sortedArray = [1, 2, 3, 4, 5, 6, 7];
@@ -30,6 +31,12 @@ function App() {
   quickSort(unsortedArray);
   radixSort([18, 232, 4, 332, 23425, 5232, 52321, 423, 421, 3234, 13]);
   console.log(recursiveBubbleSort(unsortedArray));
+  console.log(
+    secondLargestElement(
+      radixSort([18, 232, 4, 332, 23425, 5232, 52321, 423, 421, 3234, 13])
+    )
+  );
+
   return (
     <>
       <h1>Vite + React</h1>
