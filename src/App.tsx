@@ -9,6 +9,7 @@ import { merge, mergeSort } from "./algo/mergeSort";
 import { naiveSearch } from "./algo/naiveSearch";
 import { quickSort } from "./algo/quickSort";
 import { radixSort } from "./algo/radixSort";
+import { recursiveBubbleSort } from "./algo/recursiveBubbleSort";
 import { selection_sort } from "./algo/selectionSort";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
   mergeSort(unsortedArray);
   quickSort(unsortedArray);
   radixSort([18, 232, 4, 332, 23425, 5232, 52321, 423, 421, 3234, 13]);
+  console.log(recursiveBubbleSort(unsortedArray));
   return (
     <>
       <h1>Vite + React</h1>
@@ -36,6 +38,9 @@ function App() {
         {radixSort([
           18, 232, 4, 332, 23425, 5232, 52321, 423, 421, 3234, 13,
         ]).join(", ")}
+      </h5>
+      <h5>
+        Recursive Bubble Sort {recursiveBubbleSort(unsortedArray).join(", ")}
       </h5>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
