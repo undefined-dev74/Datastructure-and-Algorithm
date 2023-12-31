@@ -11,6 +11,7 @@ import { quickSort } from "./algo/quickSort";
 import { radixSort } from "./algo/radixSort";
 import { recursiveBubbleSort } from "./algo/recursiveBubbleSort";
 import { selection_sort } from "./algo/selectionSort";
+import { removeDuplicate } from "./leetcode/removeDuplicate";
 import { secondLargestElement } from "./leetcode/secondLargestElement";
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
     )
   );
 
+  removeDuplicate([1, 1, 2, 2, 3, 4, 4, 5, 5]);
   return (
     <>
       <h1>Vite + React</h1>
