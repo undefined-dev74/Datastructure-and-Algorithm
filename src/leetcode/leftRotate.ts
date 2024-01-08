@@ -1,3 +1,5 @@
+import { swap } from "~/utils/swap";
+
 export function leftRotate(nums: number[]) {
   const temp = nums[0];
   const n = nums.length;
@@ -42,4 +44,24 @@ export function rotateLeftByDElement(nums: number[], d: number) {
     j++;
   }
   console.log("ROTATE ELEMENT D", nums);
+}
+
+// optimal solution
+
+function reverse(arr: number[], start: number, end: number) {
+  while (start <= end) {
+    swap(arr, start, end);
+    start++;
+    end--;
+  }
+}
+
+export function rotateLeftByDElementOptimal(arr: number[], k: number) {
+  const n = arr.length;
+  // reverse first n- k element
+  reverse(arr, 0, n - k - 1);
+  reverse(arr, n - k, n - 1);
+  reverse(arr, 0, n - 1);
+
+  console.log("rotateLeftByDElementOptimal", arr);
 }

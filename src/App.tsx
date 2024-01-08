@@ -1,7 +1,11 @@
 import "./App.css";
 import { radixSort } from "./algo/radixSort";
 import { recursiveBubbleSort } from "./algo/recursiveBubbleSort";
-import { leftRotate, rotateLeftByDElement } from "./leetcode/leftRotate";
+import {
+  leftRotate,
+  rotateLeftByDElement,
+  rotateLeftByDElementOptimal,
+} from "./leetcode/leftRotate";
 
 function App() {
   const sortedArray = [1, 2, 3, 4, 5, 6, 7];
@@ -32,6 +36,7 @@ function App() {
   leftRotate([1, 2, 3, 4, 5]);
   rotateLeftByDElement(unsortedArray, 3);
   console.log(unsortedArray);
+  rotateLeftByDElementOptimal(sortedArray, 3);
   return (
     <>
       <h1>Vite + React</h1>
