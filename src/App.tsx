@@ -6,7 +6,9 @@ import {
   rotateLeftByDElement,
   rotateLeftByDElementOptimal,
 } from "./leetcode/leftRotate";
+import { findMissingNumber } from "./leetcode/missingNumber";
 import { moveZero, optimalMoveZero } from "./leetcode/moveZero";
+import { unionIntersection } from "./leetcode/unionIntersection";
 import { unionOfSortedArray } from "./leetcode/unionOfSortedArray";
 
 function App() {
@@ -42,6 +44,8 @@ function App() {
   moveZero([1, 3, 4, 5, 6, 0, 8, 0, 9, 0, 7, 0]);
   optimalMoveZero([1, 3, 4, 5, 6, 0, 8, 0, 9, 0, 7, 0]);
   console.log(unionOfSortedArray([1, 2, 3, 4, 5], [1, 3, 4, 6, 8, 2]));
+  console.log(unionIntersection([1, 2, 2, 4, 5], [1, 2, 3, 6, 8]));
+  console.log(findMissingNumber([0, 1]));
   return (
     <>
       <h1>Vite + React</h1>
