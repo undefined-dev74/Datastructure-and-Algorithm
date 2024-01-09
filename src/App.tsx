@@ -6,6 +6,7 @@ import {
   rotateLeftByDElement,
   rotateLeftByDElementOptimal,
 } from "./leetcode/leftRotate";
+import { moveZero, optimalMoveZero } from "./leetcode/moveZero";
 
 function App() {
   const sortedArray = [1, 2, 3, 4, 5, 6, 7];
@@ -37,6 +38,8 @@ function App() {
   rotateLeftByDElement(unsortedArray, 3);
   console.log(unsortedArray);
   rotateLeftByDElementOptimal(sortedArray, 3);
+  moveZero([1, 3, 4, 5, 6, 0, 8, 0, 9, 0, 7, 0]);
+  optimalMoveZero([1, 3, 4, 5, 6, 0, 8, 0, 9, 0, 7, 0]);
   return (
     <>
       <h1>Vite + React</h1>
