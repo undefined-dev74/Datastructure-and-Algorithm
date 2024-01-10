@@ -3,10 +3,12 @@ export function removeDuplicate(arr: number[]) {
 
   for (let j = i; j < arr.length; j++) {
     const element = arr[j];
-
+    console.log("i", arr[i], "j", element);
     if (arr[i] !== element) {
+      console.log(arr[i + 1], element);
       arr[i + 1] = element;
       i++;
+      console.log(i);
     }
   }
   console.log("Remove Duplicate >>", arr);

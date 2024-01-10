@@ -39,13 +39,7 @@ export function radixSort(arr: number[]) {
 
     // Concatenate the buckets to get the new order of the array
     arr = [].concat(...digitsBucket);
-
-    // Log the state of buckets for each digit position
-    console.log(digitsBucket);
   }
-
-  // Log the final sorted array
-  console.log(arr);
 
   // Return the sorted array
   return arr;

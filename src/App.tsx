@@ -7,6 +7,7 @@ import {
   rotateLeftByDElementOptimal,
 } from "./leetcode/leftRotate";
 import { findMissingNumber } from "./leetcode/missingNumber";
+import { mostConsecutiveOnes } from "./leetcode/mostConsecutiveOnes";
 import { moveZero, optimalMoveZero } from "./leetcode/moveZero";
 import { unionIntersection } from "./leetcode/unionIntersection";
 import { unionOfSortedArray } from "./leetcode/unionOfSortedArray";
@@ -46,6 +47,7 @@ function App() {
   console.log(unionOfSortedArray([1, 2, 3, 4, 5], [1, 3, 4, 6, 8, 2]));
   console.log(unionIntersection([1, 2, 2, 4, 5], [1, 2, 3, 6, 8]));
   console.log(findMissingNumber([0, 1]));
+  mostConsecutiveOnes([0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0]);
   return (
     <>
       <h1>Vite + React</h1>
