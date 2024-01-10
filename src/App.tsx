@@ -9,6 +9,7 @@ import {
 import { findMissingNumber } from "./leetcode/missingNumber";
 import { mostConsecutiveOnes } from "./leetcode/mostConsecutiveOnes";
 import { moveZero, optimalMoveZero } from "./leetcode/moveZero";
+import { singleNumber } from "./leetcode/singleNumber";
 import { unionIntersection } from "./leetcode/unionIntersection";
 import { unionOfSortedArray } from "./leetcode/unionOfSortedArray";
 
@@ -48,6 +49,11 @@ function App() {
   console.log(unionIntersection([1, 2, 2, 4, 5], [1, 2, 3, 6, 8]));
   console.log(findMissingNumber([0, 1]));
   mostConsecutiveOnes([0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0]);
+  console.log(
+    "SINGLE NUMBER",
+    singleNumber([1, 2, 2, 3, 3, 3, 4, 4, 5, 5, 5, 5])
+  );
+
   return (
     <>
       <h1>Vite + React</h1>
