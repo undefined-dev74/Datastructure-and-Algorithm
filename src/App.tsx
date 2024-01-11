@@ -6,7 +6,9 @@ import {
   rotateLeftByDElement,
   rotateLeftByDElementOptimal,
 } from "./leetcode/leftRotate";
+import { longestSubArrayWithSum } from "./leetcode/longestSubArrayWithSum";
 import { findMissingNumber } from "./leetcode/missingNumber";
+import maxPower from "./leetcode/mostConsecutiveChar";
 import { mostConsecutiveOnes } from "./leetcode/mostConsecutiveOnes";
 import { moveZero, optimalMoveZero } from "./leetcode/moveZero";
 import { singleNumber } from "./leetcode/singleNumber";
@@ -16,6 +18,7 @@ import { unionOfSortedArray } from "./leetcode/unionOfSortedArray";
 function App() {
   const sortedArray = [1, 2, 3, 4, 5, 6, 7];
   const unsortedArray = [12, 7, 2, 19, 33, 17, 28, 5];
+
   // selection_sort(unsortedArray);
   // insertionSort(unsortedArray);
 
@@ -54,6 +57,8 @@ function App() {
     singleNumber([1, 2, 2, 3, 3, 3, 4, 4, 5, 5, 5, 5])
   );
 
+  console.log(longestSubArrayWithSum([1, 1, 2, 2, 3, 4, 4], 12));
+  maxPower("j");
   return (
     <>
       <h1>Vite + React</h1>
