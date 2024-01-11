@@ -11,6 +11,8 @@ import { findMissingNumber } from "./leetcode/missingNumber";
 import maxPower from "./leetcode/mostConsecutiveChar";
 import { mostConsecutiveOnes } from "./leetcode/mostConsecutiveOnes";
 import { moveZero, optimalMoveZero } from "./leetcode/moveZero";
+import { numberExtraction } from "./leetcode/numberExtraction";
+import { reverseInteger } from "./leetcode/reverseInteger";
 import { singleNumber } from "./leetcode/singleNumber";
 import { unionIntersection } from "./leetcode/unionIntersection";
 import { unionOfSortedArray } from "./leetcode/unionOfSortedArray";
@@ -59,6 +61,9 @@ function App() {
 
   console.log(longestSubArrayWithSum([1, 1, 2, 2, 3, 4, 4], 12));
   maxPower("j");
+
+  console.log("NUMBER EXTRACTION", numberExtraction(8812));
+  console.log("REVERSE INTEGER >>", reverseInteger(1534236469));
   return (
     <>
       <h1>Vite + React</h1>
