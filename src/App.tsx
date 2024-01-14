@@ -2,6 +2,7 @@ import "./App.css";
 import { radixSort } from "./algo/radixSort";
 import { recursiveBubbleSort } from "./algo/recursiveBubbleSort";
 import { armstrongNumber } from "./leetcode/armStrongNumber";
+import { chunkArray } from "./leetcode/chunkArray";
 import {
   leftRotate,
   rotateLeftByDElement,
@@ -76,6 +77,7 @@ function App() {
   console.log("NUMBER EXTRACTION", numberExtraction(8812));
   console.log("REVERSE INTEGER >>", reverseInteger(1534236469));
   console.log("ARMSTRONG NUMBER >>", armstrongNumber(1634));
+  console.log("CHUNK ARRAY", chunkArray([1, 9, 6, 3, 2], 3));
   return (
     <>
       <h1>Vite + React</h1>
