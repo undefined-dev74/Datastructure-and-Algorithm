@@ -7,7 +7,10 @@ import {
   rotateLeftByDElement,
   rotateLeftByDElementOptimal,
 } from "./leetcode/leftRotate";
-import { longestSubArrayWithSum } from "./leetcode/longestSubArrayWithSum";
+import {
+  longestSubArrayWithSum,
+  twoPointerLongestWithSum,
+} from "./leetcode/longestSubArrayWithSum";
 import { findMissingNumber } from "./leetcode/missingNumber";
 import maxPower from "./leetcode/mostConsecutiveChar";
 import { mostConsecutiveOnes } from "./leetcode/mostConsecutiveOnes";
@@ -60,7 +63,14 @@ function App() {
     singleNumber([1, 2, 2, 3, 3, 3, 4, 4, 5, 5, 5, 5])
   );
 
-  console.log(longestSubArrayWithSum([1, 1, 2, 2, 3, 4, 4], 12));
+  console.log(
+    "LONGEST SUB ARRAY",
+    longestSubArrayWithSum([1, 1, 2, 2, 3, 4, 4], 6)
+  );
+  console.log(
+    "TWO POINTER, SUB ARRAY",
+    twoPointerLongestWithSum([1, 1, 2, 2, 3, 4, 4], 6)
+  );
   maxPower("j");
 
   console.log("NUMBER EXTRACTION", numberExtraction(8812));
