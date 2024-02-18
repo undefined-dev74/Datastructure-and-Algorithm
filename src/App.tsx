@@ -1,7 +1,7 @@
 import "./App.css";
 import { radixSort } from "./algo/radixSort";
 import { recursiveBubbleSort } from "./algo/recursiveBubbleSort";
-import { hashingTwoSum, twoSum } from "./leetcode/2sum";
+import { twoPointerSum, twoSum } from "./leetcode/2sum";
 import { armstrongNumber } from "./leetcode/armStrongNumber";
 import { chunkArray } from "./leetcode/chunkArray";
 import { findSpecialInteger } from "./leetcode/findSpecialInteger";
@@ -90,7 +90,7 @@ function App() {
   console.log("NUMBER EXTRACTION", numberExtraction(8812));
 
   console.clear();
-  console.log(hashingTwoSum([1, 5, 6, 7, 9, 2], 11));
+  console.log(twoPointerSum([1, 2, 5, 7, 9], 12));
   return (
     <>
       <h1>Vite + React</h1>
