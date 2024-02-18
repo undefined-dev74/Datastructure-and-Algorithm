@@ -1,6 +1,7 @@
 import "./App.css";
 import { radixSort } from "./algo/radixSort";
 import { recursiveBubbleSort } from "./algo/recursiveBubbleSort";
+import { twoSum } from "./leetcode/2sum";
 import { armstrongNumber } from "./leetcode/armStrongNumber";
 import { chunkArray } from "./leetcode/chunkArray";
 import { findSpecialInteger } from "./leetcode/findSpecialInteger";
@@ -18,6 +19,7 @@ import maxPower from "./leetcode/mostConsecutiveChar";
 import { mostConsecutiveOnes } from "./leetcode/mostConsecutiveOnes";
 import { moveZero, optimalMoveZero } from "./leetcode/moveZero";
 import { numberExtraction } from "./leetcode/numberExtraction";
+import { repeatedSubstringPattern } from "./leetcode/repeatedSubstringPattern";
 import { reverseInteger } from "./leetcode/reverseInteger";
 import { singleNumber } from "./leetcode/singleNumber";
 import { unionIntersection } from "./leetcode/unionIntersection";
@@ -75,7 +77,6 @@ function App() {
   );
   maxPower("j");
 
-  console.log("NUMBER EXTRACTION", numberExtraction(8812));
   console.log("REVERSE INTEGER >>", reverseInteger(1534236469));
   console.log("ARMSTRONG NUMBER >>", armstrongNumber(1634));
   console.log("CHUNK ARRAY", chunkArray([1, 9, 6, 3, 2], 2));
@@ -83,6 +84,10 @@ function App() {
     "Find special integer",
     findSpecialInteger([1, 2, 2, 6, 6, 6, 6, 7, 10])
   );
+  console.log("repeatedSubstringPattern", repeatedSubstringPattern("aba"));
+
+  console.log("TWO SUM", twoSum([1, 5, 6, 7, 9, 2, 5, 7], 12));
+  console.log("NUMBER EXTRACTION", numberExtraction(8812));
   return (
     <>
       <h1>Vite + React</h1>
