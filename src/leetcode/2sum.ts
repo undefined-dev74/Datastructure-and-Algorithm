@@ -11,3 +11,26 @@ export const twoSum = (nums: number[], target: number) => {
     }
   }
 };
+
+/* 
+
+*/
+
+// Hashing method
+
+export const hashingTwoSum = (nums: number[], target: number): number[] => {
+  const objMap: Record<number, number> = {};
+
+  for (let i = 0; i < nums.length; i++) {
+    objMap[nums[i]] = i;
+  }
+
+  for (let i = 0; i < nums.length; i++) {
+    const complement = target - nums[i];
+
+    if (objMap.hasOwnProperty(complement) && objMap[complement] !== i) {
+      return [i, objMap[complement]];
+    }
+  }
+  return [];
+};
