@@ -14,6 +14,7 @@ import {
   longestSubArrayWithSum,
   twoPointerLongestWithSum,
 } from "./leetcode/longestSubArrayWithSum";
+import { majorityElements } from "./leetcode/majorityElement";
 import { findMissingNumber } from "./leetcode/missingNumber";
 import maxPower from "./leetcode/mostConsecutiveChar";
 import { mostConsecutiveOnes } from "./leetcode/mostConsecutiveOnes";
@@ -94,6 +95,8 @@ function App() {
   console.log(twoPointerSum([1, 2, 5, 7, 9], 12));
 
   console.log(sortArrayOfZeronOnes([0, 1, 0, 2, 1, 1, 0, 1, 0, 0, 2, 2, 1, 1]));
+  // console.log(dnfSo  rtColors([0, 1, 0, 2, 1, 1, 0, 1, 0, 0, 2, 2, 1, 1]));
+  console.log(majorityElements([2, 2, 1, 1, 1, 2, 2]));
 
   return (
     <>
