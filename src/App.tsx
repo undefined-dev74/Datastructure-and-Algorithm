@@ -23,7 +23,10 @@ import { numberExtraction } from "./leetcode/numberExtraction";
 import { repeatedSubstringPattern } from "./leetcode/repeatedSubstringPattern";
 import { reverseInteger } from "./leetcode/reverseInteger";
 import { singleNumber } from "./leetcode/singleNumber";
-import { sortArrayOfZeronOnes } from "./leetcode/sortArrayOfZeronOnes";
+import {
+  dnfSortArrayOfZeronOnes,
+  sortArrayOfZeronOnes,
+} from "./leetcode/sortArrayOfZeronOnes";
 import { unionIntersection } from "./leetcode/unionIntersection";
 import { unionOfSortedArray } from "./leetcode/unionOfSortedArray";
 
@@ -95,6 +98,10 @@ function App() {
   console.log(twoPointerSum([1, 2, 5, 7, 9], 12));
 
   console.log(sortArrayOfZeronOnes([0, 1, 0, 2, 1, 1, 0, 1, 0, 0, 2, 2, 1, 1]));
+  console.log(
+    "DNF",
+    dnfSortArrayOfZeronOnes([0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0])
+  );
   // console.log(dnfSo  rtColors([0, 1, 0, 2, 1, 1, 0, 1, 0, 0, 2, 2, 1, 1]));
   console.log(majorityElements([2, 2, 1, 1, 1, 2, 2]));
 
