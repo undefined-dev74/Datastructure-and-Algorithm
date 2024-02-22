@@ -1,4 +1,5 @@
 import "./App.css";
+import { binarySearchExtended } from "./algo/binarySearch";
 import { radixSort } from "./algo/radixSort";
 import { recursiveBubbleSort } from "./algo/recursiveBubbleSort";
 import { twoPointerSum, twoSum } from "./leetcode/2sum";
@@ -106,6 +107,10 @@ function App() {
   // console.log(dnfSo  rtColors([0, 1, 0, 2, 1, 1, 0, 1, 0, 0, 2, 2, 1, 1]));
   console.log(majorityElements([2, 2, 1, 1, 1, 2, 2]));
   console.log(maximumSubArraySum([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
+  console.log(
+    "BINARY SEARCH EXTENDED",
+    binarySearchExtended([1, 2, 3, 5, 6, 9, 15, 19], 17)
+  );
 
   return (
     <>
