@@ -1,5 +1,6 @@
 import "./App.css";
 import { binarySearchExtended } from "./algo/binarySearch";
+import { mergeTwoSortedArrays } from "./algo/mergeSortedArray";
 import { radixSort } from "./algo/radixSort";
 import { recursiveBubbleSort } from "./algo/recursiveBubbleSort";
 import { twoPointerSum, twoSum } from "./leetcode/2sum";
@@ -112,6 +113,7 @@ function App() {
     binarySearchExtended([1, 2, 3, 5, 6, 9, 15, 19], 17)
   );
 
+  mergeTwoSortedArrays([0, 0, 3, 0, 0, 0, 0, 0, 0], 3, [-1, 1, 1, 1, 2, 3], 6);
   return (
     <>
       <h1>Vite + React</h1>
@@ -125,7 +127,8 @@ function App() {
         Recursive Bubble Sort {recursiveBubbleSort(unsortedArray).join(", ")}
       </h5>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        MERGE TWO SORTED ARRAY <br /> [0, 0, 3, 0, 0, 0, 0, 0, 0], 3, [-1, 1, 1,
+        1, 2, 3], 6
       </p>
     </>
   );
