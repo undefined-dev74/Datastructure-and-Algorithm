@@ -23,6 +23,7 @@ import maxPower from "./leetcode/mostConsecutiveChar";
 import { mostConsecutiveOnes } from "./leetcode/mostConsecutiveOnes";
 import { moveZero, optimalMoveZero } from "./leetcode/moveZero";
 import { numberExtraction } from "./leetcode/numberExtraction";
+import { rearrangeArray } from "./leetcode/rearrangeArray";
 import { repeatedSubstringPattern } from "./leetcode/repeatedSubstringPattern";
 import { reverseInteger } from "./leetcode/reverseInteger";
 import { singleNumber } from "./leetcode/singleNumber";
@@ -114,6 +115,8 @@ function App() {
   );
 
   mergeTwoSortedArrays([0, 0, 3, 0, 0, 0, 0, 0, 0], 3, [-1, 1, 1, 1, 2, 3], 6);
+
+  rearrangeArray([3, 1, -2, -5, 2, -4]);
   return (
     <>
       <h1>Vite + React</h1>
