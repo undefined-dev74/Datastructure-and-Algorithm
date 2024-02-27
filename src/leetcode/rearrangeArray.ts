@@ -45,3 +45,27 @@ export function rearrangeArray(nums: number[]): number[] {
 
   return results;
 }
+
+// *************** Optimal Approach *****************
+
+export function rearrangeArrayOptimal(nums: number[]): number[] {
+  const results: number[] = [];
+
+  let positiveIdx = 0;
+  let negativeIdx = 1;
+
+  for (let i = 0; i < nums.length; i++) {
+    const element = nums[i];
+    if (element > 0) {
+      results[positiveIdx] = element;
+      positiveIdx += 2;
+    } else {
+      results[negativeIdx] = element;
+      negativeIdx += 2;
+    }
+  }
+
+  console.log(results);
+
+  return results;
+}
