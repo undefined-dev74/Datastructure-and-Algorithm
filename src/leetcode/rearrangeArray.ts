@@ -69,3 +69,40 @@ export function rearrangeArrayOptimal(nums: number[]): number[] {
 
   return results;
 }
+
+// *************** Same question different variations Alternate number *****************
+
+export function rearrangeAlternateNumbers(nums: number[]): number[] {
+  const positive: number[] = [];
+  const negative: number[] = [];
+
+  for (let i = 0; i < nums.length; i++) {
+    const element = nums[i];
+    if (element > 0) positive.push(element);
+    else negative.push(element);
+  }
+
+  if (positive.length > negative.length) {
+    for (let i = 0; negative.length; i++) {
+      nums[i * 2] = positive[i];
+      nums[i * 2 + 1] = negative[i];
+    }
+    let index = negative.length * 2;
+    for (let i = negative.length; i < positive.length; i++) {
+      nums[index] = positive[i];
+      index++;
+    }
+  } else {
+    for (let i = 0; positive.length; i++) {
+      nums[i * 2] = positive[i];
+      nums[i * 2 + 1] = negative[i];
+    }
+    let index = positive.length * 2;
+    for (let i = positive.length; i < negative.length; i++) {
+      nums[index] = negative[i];
+      index++;
+    }
+  }
+
+  return nums;
+}
