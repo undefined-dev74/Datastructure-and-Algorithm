@@ -26,6 +26,7 @@ import { numberExtraction } from "./leetcode/numberExtraction";
 import { rearrangeArray } from "./leetcode/rearrangeArray";
 import { repeatedSubstringPattern } from "./leetcode/repeatedSubstringPattern";
 import { reverseInteger } from "./leetcode/reverseInteger";
+import { searchInsert } from "./leetcode/searchElement";
 import { singleNumber } from "./leetcode/singleNumber";
 import {
   dnfSortArrayOfZeronOnes,
@@ -117,6 +118,8 @@ function App() {
   mergeTwoSortedArrays([0, 0, 3, 0, 0, 0, 0, 0, 0], 3, [-1, 1, 1, 1, 2, 3], 6);
 
   rearrangeArray([3, 1, -2, -5, 2, -4]);
+
+  console.log(searchInsert([1, 3, 5, 6], 2));
   return (
     <>
       <h1>Vite + React</h1>
