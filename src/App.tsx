@@ -34,6 +34,7 @@ import {
 } from "./leetcode/sortArrayOfZeronOnes";
 import { unionIntersection } from "./leetcode/unionIntersection";
 import { unionOfSortedArray } from "./leetcode/unionOfSortedArray";
+import SortingVisualizer from "./views/SortingVisualizer";
 
 function App() {
   const sortedArray = [1, 2, 3, 4, 5, 6, 7];
@@ -122,6 +123,7 @@ function App() {
   console.log(searchInsert([1, 3, 5, 6], 2));
   return (
     <>
+      <SortingVisualizer />
       <h1>Vite + React</h1>
       <h5>
         Radix Sort{" "}

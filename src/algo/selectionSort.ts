@@ -15,5 +15,5 @@ export const selection_sort = (arr: number[]) => {
     if (i !== lowest) [arr[lowest], arr[i]] = [arr[i], arr[lowest]];
   }
   console.log("SELECTION SORT", arr);
-  return `Selection Sort ${arr}`;
+  return arr;
 };
