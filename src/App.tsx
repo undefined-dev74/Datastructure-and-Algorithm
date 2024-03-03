@@ -6,6 +6,7 @@ import { recursiveBubbleSort } from "./algo/recursiveBubbleSort";
 import { twoPointerSum, twoSum } from "./leetcode/2sum";
 import { armstrongNumber } from "./leetcode/armStrongNumber";
 import { chunkArray } from "./leetcode/chunkArray";
+import { dominantIndex } from "./leetcode/dominantIndex";
 import { findSpecialInteger } from "./leetcode/findSpecialInteger";
 import {
   leftRotate,
@@ -121,6 +122,7 @@ function App() {
   rearrangeArray([3, 1, -2, -5, 2, -4]);
 
   console.log(searchInsert([1, 3, 5, 6], 2));
+  console.log(dominantIndex([1, 2, 3, 4]));
   return (
     <>
       <SortingVisualizer />
