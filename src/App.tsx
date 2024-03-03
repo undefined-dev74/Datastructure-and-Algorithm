@@ -23,6 +23,7 @@ import { findMissingNumber } from "./leetcode/missingNumber";
 import maxPower from "./leetcode/mostConsecutiveChar";
 import { mostConsecutiveOnes } from "./leetcode/mostConsecutiveOnes";
 import { moveZero, optimalMoveZero } from "./leetcode/moveZero";
+import { numJewelsInStones } from "./leetcode/numJewelsInStones";
 import { numberExtraction } from "./leetcode/numberExtraction";
 import { rearrangeArray } from "./leetcode/rearrangeArray";
 import { repeatedSubstringPattern } from "./leetcode/repeatedSubstringPattern";
@@ -123,6 +124,7 @@ function App() {
 
   console.log(searchInsert([1, 3, 5, 6], 2));
   console.log(dominantIndex([1, 2, 3, 4]));
+  numJewelsInStones("aA", "aAAbbbb");
   return (
     <>
       <SortingVisualizer />
