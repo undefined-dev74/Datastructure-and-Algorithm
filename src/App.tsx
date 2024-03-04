@@ -8,6 +8,7 @@ import { armstrongNumber } from "./leetcode/armStrongNumber";
 import { chunkArray } from "./leetcode/chunkArray";
 import { dominantIndex } from "./leetcode/dominantIndex";
 import { findSpecialInteger } from "./leetcode/findSpecialInteger";
+import { leadersInArrayPosition } from "./leetcode/leadersInArrayPosition";
 import {
   leftRotate,
   rotateLeftByDElement,
@@ -125,6 +126,8 @@ function App() {
   console.log(searchInsert([1, 3, 5, 6], 2));
   console.log(dominantIndex([1, 2, 3, 4]));
   numJewelsInStones("aA", "aAAbbbb");
+
+  console.log(leadersInArrayPosition([10, 22, 12, 3, 0, 6]));
   return (
     <>
       <SortingVisualizer />
