@@ -14,6 +14,7 @@ import {
   rotateLeftByDElement,
   rotateLeftByDElementOptimal,
 } from "./leetcode/leftRotate";
+import { longestConsecutive } from "./leetcode/longestConsecutive";
 import {
   longestSubArrayWithSum,
   twoPointerLongestWithSum,
@@ -128,6 +129,7 @@ function App() {
   numJewelsInStones("aA", "aAAbbbb");
 
   console.log(leadersInArrayPosition([10, 22, 12, 3, 0, 6]));
+  console.log(longestConsecutive([0, 3, 7, 2, 5, 8, 4, 6, 0, 1]));
   return (
     <>
       <SortingVisualizer />
