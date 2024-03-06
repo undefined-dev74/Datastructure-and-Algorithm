@@ -133,7 +133,10 @@ function App() {
 
   console.log(leadersInArrayPosition([10, 22, 12, 3, 0, 6]));
   console.log("CHECK", longestConsecutive([0, 3, 7, 2, 5, 8, 4, 6, 0, 1]));
-  console.log("CHECK", longestConsecutiveOptimal([1, 2, 3, 5, 6, 7, 8, 9, 10]));
+  console.log(
+    "CHECK",
+    longestConsecutiveOptimal([11, 2, 1, 7, 6, 7, 8, 9, 10])
+  );
   return (
     <>
       <SortingVisualizer />
