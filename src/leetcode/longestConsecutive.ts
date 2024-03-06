@@ -22,3 +22,22 @@ export function longestConsecutive(nums: number[]): number {
 
   return longest;
 }
+
+export function longestConsecutiveOptimal(nums: number[]): number {
+  let longest = 1,
+    count = 0,
+    lastSmallest = 0;
+
+  for (let i = 0; i < nums.length; i++) {
+    const element = nums[i];
+    if (nums[i] - 1 === lastSmallest) {
+      count += 1;
+      lastSmallest = element;
+    } else if (nums[i] !== lastSmallest) {
+      count = 1;
+      lastSmallest = element;
+    }
+    longest = Math.max(longest, count);
+  }
+  return longest;
+}
