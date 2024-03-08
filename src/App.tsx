@@ -25,6 +25,7 @@ import {
 import { majorityElements } from "./leetcode/majorityElement";
 import { maxFrequencyElement } from "./leetcode/maxFrequencyElement";
 import { maximumSubArraySum } from "./leetcode/maximumSubArraySum";
+import { minimumLength } from "./leetcode/minimumLength";
 import { findMissingNumber } from "./leetcode/missingNumber";
 import maxPower from "./leetcode/mostConsecutiveChar";
 import { mostConsecutiveOnes } from "./leetcode/mostConsecutiveOnes";
@@ -140,6 +141,7 @@ function App() {
   );
 
   maxFrequencyElement([1, 2, 2, 3, 1, 4]);
+  console.log(minimumLength("aabccabba"));
   return (
     <>
       <SortingVisualizer />
