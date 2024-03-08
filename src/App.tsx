@@ -139,7 +139,7 @@ function App() {
     longestConsecutiveOptimal([11, 2, 1, 7, 6, 7, 8, 9, 10])
   );
 
-  maxFrequencyElement([1, 2, 1, 2, 3, 4, 3, 5, 3]);
+  maxFrequencyElement([1, 2, 2, 3, 1, 4]);
   return (
     <>
       <SortingVisualizer />
