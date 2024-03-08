@@ -23,6 +23,7 @@ import {
   twoPointerLongestWithSum,
 } from "./leetcode/longestSubArrayWithSum";
 import { majorityElements } from "./leetcode/majorityElement";
+import { maxFrequencyElement } from "./leetcode/maxFrequencyElement";
 import { maximumSubArraySum } from "./leetcode/maximumSubArraySum";
 import { findMissingNumber } from "./leetcode/missingNumber";
 import maxPower from "./leetcode/mostConsecutiveChar";
@@ -137,6 +138,8 @@ function App() {
     "CHECK",
     longestConsecutiveOptimal([11, 2, 1, 7, 6, 7, 8, 9, 10])
   );
+
+  maxFrequencyElement([1, 2, 1, 2, 3, 4, 3, 5, 3]);
   return (
     <>
       <SortingVisualizer />
