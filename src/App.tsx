@@ -4,6 +4,7 @@ import { mergeTwoSortedArrays } from "./algo/mergeSortedArray";
 import { radixSort } from "./algo/radixSort";
 import { recursiveBubbleSort } from "./algo/recursiveBubbleSort";
 import { twoPointerSum, twoSum } from "./leetcode/2sum";
+import { arraysIntersection } from "./leetcode/Arrayintersection";
 import { armstrongNumber } from "./leetcode/armStrongNumber";
 import { chunkArray } from "./leetcode/chunkArray";
 import { dominantIndex } from "./leetcode/dominantIndex";
@@ -142,6 +143,7 @@ function App() {
 
   maxFrequencyElement([1, 2, 2, 3, 1, 4]);
   console.log(minimumLength("aabccabba"));
+  arraysIntersection([1, 2, 2, 1], [2, 2]);
   return (
     <>
       <SortingVisualizer />
