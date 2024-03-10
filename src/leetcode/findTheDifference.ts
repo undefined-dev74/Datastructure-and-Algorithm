@@ -36,27 +36,25 @@ O(m) for the loop over string 't'.
 The dominant term is the loop over the longer string, so the overall time complexity is O(max(n, m)).
 */
 
+/* 
+This solution is 57ms faster than previous commit of 400ms
+*/
 export function findTheDifference(s: string, t: string): string {
   const map: Record<string, number> = {};
 
   for (const char of s) {
     map[char] = ++map[char] || 1;
   }
-  console.log(map);
+
   for (const char of t) {
+    // If the character is not present in the decrease the count
     if (Object.prototype.hasOwnProperty.call(map, char)) {
-      // If the character is not present in the decrease the count
       map[char]--;
-      if (Object.prototype.hasOwnProperty.call(map, char)) {
-        const element = map[char];
-        if (element < 0) return char;
-      }
-      //   return char;
-    } else {
-      return char;
-    }
+      const element = map[char];
+      if (element < 0) return char;
+    } else return char;
   }
 
-  //   flow will never come here
+  //   flow will never come here but we have to return something in order to get rid of typescript error
   return "";
 }
