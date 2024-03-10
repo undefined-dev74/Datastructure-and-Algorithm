@@ -7,6 +7,7 @@ import { twoPointerSum, twoSum } from "./leetcode/2sum";
 import { arraysIntersection } from "./leetcode/Arrayintersection";
 import { armstrongNumber } from "./leetcode/armStrongNumber";
 import { chunkArray } from "./leetcode/chunkArray";
+import { countCharacters } from "./leetcode/countCharcters";
 import { dominantIndex } from "./leetcode/dominantIndex";
 import { findSpecialInteger } from "./leetcode/findSpecialInteger";
 import { findTheDifference } from "./leetcode/findTheDifference";
@@ -147,6 +148,8 @@ function App() {
   arraysIntersection([1, 2, 2, 1], [2, 2]);
 
   console.log(findTheDifference("a", "aa"));
+
+  console.log(countCharacters(["cat", "bt", "hat", "tree"], "atach"));
   return (
     <>
       <SortingVisualizer />
