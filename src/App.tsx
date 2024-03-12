@@ -8,9 +8,11 @@ import { arraysIntersection } from "./leetcode/Arrayintersection";
 import { armstrongNumber } from "./leetcode/armStrongNumber";
 import { chunkArray } from "./leetcode/chunkArray";
 import { countCharacters } from "./leetcode/countCharcters";
+import { customSortString } from "./leetcode/customSortString";
 import { dominantIndex } from "./leetcode/dominantIndex";
 import { findSpecialInteger } from "./leetcode/findSpecialInteger";
 import { findTheDifference } from "./leetcode/findTheDifference";
+import { largestGoodInteger } from "./leetcode/largestGoodInteger";
 import { leadersInArrayPosition } from "./leetcode/leadersInArrayPosition";
 import {
   leftRotate,
@@ -150,6 +152,9 @@ function App() {
   console.log(findTheDifference("a", "aa"));
 
   console.log(countCharacters(["cat", "bt", "hat", "tree"], "atach"));
+  console.log(largestGoodInteger("67771999333"));
+
+  console.log(customSortString("kqep", "pekeq"));
   return (
     <>
       <SortingVisualizer />
