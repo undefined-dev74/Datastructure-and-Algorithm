@@ -38,6 +38,8 @@ import { moveZero, optimalMoveZero } from "./leetcode/moveZero";
 import { numJewelsInStones } from "./leetcode/numJewelsInStones";
 import { numberExtraction } from "./leetcode/numberExtraction";
 import { rearrangeArray } from "./leetcode/rearrangeArray";
+import { removeElement } from "./leetcode/remove-element";
+
 import { repeatedSubstringPattern } from "./leetcode/repeatedSubstringPattern";
 import { reverseInteger } from "./leetcode/reverseInteger";
 import { searchInsert } from "./leetcode/searchElement";
@@ -155,6 +157,7 @@ function App() {
   console.log(largestGoodInteger("67771999333"));
 
   console.log(customSortString("kqep", "pekeq"));
+  console.log(removeElement([0, 1, 2, 2, 3, 0, 4, 2], 2));
   return (
     <>
       <SortingVisualizer />
