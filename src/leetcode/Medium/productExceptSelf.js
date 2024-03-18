@@ -33,19 +33,32 @@ function productExceptSelf(nums) {
 }
 
 function productExceptSelf_second(nums) {
-  let total = 1;
-  let i = 0;
-  let finalResult = [];
-  while (i < nums.length) {
-    total = nums[i] * total;
-    i++;
+  let product_without_zero = 1;
+  let count_of_zero = 0;
+
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] === 0) {
+      count_of_zero++;
+    } else {
+      product_without_zero *= nums[i];
+    }
   }
-  i = 0;
-  while (i < nums.length) {
-    finalResult[i] = total / nums[i];
-    i++;
+
+  let results = Array(nums.length);
+
+  for (let i = 0; i < nums.length; i++) {
+    const element = nums[i];
+    if (element !== 0) {
+      if (count_of_zero > 0) results[i] = 0;
+      else {
+        results[i] = product_without_zero / element;
+      }
+    } else {
+      if (count_of_zero > 1) results[i] = 0;
+      else results[i] = product_without_zero;
+    }
   }
-  console.log(total);
+  return results;
 }
 productExceptSelf([1, 2, 3, 4]);
 productExceptSelf_second([1, 2, 3, 4]);
