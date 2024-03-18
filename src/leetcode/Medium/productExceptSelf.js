@@ -33,19 +33,55 @@ function productExceptSelf(nums) {
 }
 
 function productExceptSelf_second(nums) {
-  let total = 1;
-  let i = 0;
-  let finalResult = [];
-  while (i < nums.length) {
-    total = nums[i] * total;
-    i++;
+  let product_without_zero = 1;
+  let count_of_zero = 0;
+
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] === 0) {
+      count_of_zero++;
+    } else {
+      product_without_zero *= nums[i];
+    }
   }
-  i = 0;
-  while (i < nums.length) {
-    finalResult[i] = total / nums[i];
-    i++;
+
+  let results = Array(nums.length);
+
+  for (let i = 0; i < nums.length; i++) {
+    const element = nums[i];
+    if (element !== 0) {
+      if (count_of_zero > 0) results[i] = 0;
+      else {
+        results[i] = product_without_zero / element;
+      }
+    } else {
+      if (count_of_zero > 1) results[i] = 0;
+      else results[i] = product_without_zero;
+    }
   }
-  console.log(total);
+  return results;
 }
-productExceptSelf([1, 2, 3, 4]);
+
+function productExceptSelf_third(nums) {
+  let n = nums.length;
+  let left = Array(n);
+  let right = Array(n);
+  left[0] = 1;
+  right[n - 1] = 1;
+  let results = Array(n);
+
+  for (let i = 1; i < n; i++) {
+    left[i] = nums[i - 1] * left[i - 1];
+  }
+  for (let i = n - 2; i >= 0; i--) {
+    right[i] = nums[i + 1] * right[i + 1];
+  }
+  for (let i = 0; i < n; i++) {
+    results[i] = left[i] * right[i];
+  }
+  console.log(results);
+  return results;
+}
+
+// productExceptSelf([1, 2, 3, 4]);
 productExceptSelf_second([1, 2, 3, 4]);
+productExceptSelf_third([1, 2, 3, 4]);
