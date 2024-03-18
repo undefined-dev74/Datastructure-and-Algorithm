@@ -60,5 +60,28 @@ function productExceptSelf_second(nums) {
   }
   return results;
 }
-productExceptSelf([1, 2, 3, 4]);
+
+function productExceptSelf_third(nums) {
+  let n = nums.length;
+  let left = Array(n);
+  let right = Array(n);
+  left[0] = 1;
+  right[n - 1] = 1;
+  let results = Array(n);
+
+  for (let i = 1; i < n; i++) {
+    left[i] = nums[i - 1] * left[i - 1];
+  }
+  for (let i = n - 2; i >= 0; i--) {
+    right[i] = nums[i + 1] * right[i + 1];
+  }
+  for (let i = 0; i < n; i++) {
+    results[i] = left[i] * right[i];
+  }
+  console.log(results);
+  return results;
+}
+
+// productExceptSelf([1, 2, 3, 4]);
 productExceptSelf_second([1, 2, 3, 4]);
+productExceptSelf_third([1, 2, 3, 4]);
