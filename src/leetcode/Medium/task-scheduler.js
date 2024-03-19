@@ -41,3 +41,5 @@ function leastInterval(tasks, n) {
 }
 
 console.log(leastInterval(["A", "A", "A", "B", "B", "B"], 1));
+// TODO: Try to attempt and understand the problem on own
+// FIXME: Try to fix the issue
