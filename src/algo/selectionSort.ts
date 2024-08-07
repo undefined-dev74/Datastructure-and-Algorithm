@@ -1,18 +1,19 @@
 export const selection_sort = (arr: number[]) => {
-  for (let i = 0; i <= arr.length - 2; i++) {
+  for (let i = 0; i < arr.length; i++) {
     // Store the minimum value
-    let min = i;
-    for (let j = i + 1; j <= arr.length - 1; j++) {
-      // checks the two value in which is min
-      if (arr[j] < arr[min])
-        // and assign the min index to min variable
-        min = j;
+    let lowest = i;
+    for (let j = i + 1; j < arr.length; j++) {
+      // checks the two value in which is lowest
+      // [14, 8, 1, 5, 19]
+      //lowest is 14 since loop first start
+      // comparing it with 8 which is j+1
+      if (arr[j] < arr[lowest])
+        // and assign the lowest index to lowest variable
+        lowest = j;
     }
 
-    const temp = arr[min];
-    arr[min] = arr[i];
-    arr[i] = temp;
+    if (i !== lowest) [arr[lowest], arr[i]] = [arr[i], arr[lowest]];
   }
-  console.log(arr);
-  return `Selection Sort ${arr}`;
+  console.log("SELECTION SORT", arr);
+  return arr;
 };

@@ -13,6 +13,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "allowJs": true,
 
     /* Linting */
     "strict": true,
@@ -25,7 +26,14 @@
       "~/*": ["src/*"]
     }
   },
-  "include": ["src/*", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "src/*",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/ds/linkedList.js",
+    "src/leetcode/countSubstring.js",
+    "src/leetcode/countSubstringjts"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }],
   /* Exclude files and directories from compilation */
   "exclude": ["node_modules"]
