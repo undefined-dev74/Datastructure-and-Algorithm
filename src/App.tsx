@@ -51,6 +51,7 @@ import {
 } from "./leetcode/sortArrayOfZeronOnes";
 import { unionIntersection } from "./leetcode/unionIntersection";
 import { unionOfSortedArray } from "./leetcode/unionOfSortedArray";
+import Practice from "./practice";
 import SortingVisualizer from "./views/SortingVisualizer";
 
 function App() {
@@ -163,6 +164,7 @@ function App() {
   return (
     <>
       <SortingVisualizer />
+      <Practice />
       <h1>Vite + React</h1>
       <h5>
         Radix Sort{" "}
