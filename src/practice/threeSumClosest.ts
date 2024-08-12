@@ -1,23 +1,25 @@
 const threeSumClosest = (nums: number[], target: number): number => {
-  let closest = Infinity;
+  let closest = Infinity; // first we will define it as infinity, since we have to find the closest sum
+  // step 1: sort the array
   nums.sort((a, b) => a - b);
-
-  for (let k = 0; k < nums.length - 2; k++) {
-    let i = k + 1;
-    let j = nums.length - 1;
-
-    while (i < j) {
-      const sum = nums[k] + nums[i] + nums[j];
-
+  // step 2: iterate through the array
+  // we will iterate till the 3rd last element, since we have to find the sum of 3 element
+  // left pointer will be i + 1, since i will be the first element starting from 0th index
+  for (let i = 0; i < nums.length - 2; i++) {
+    // step 3: define left and right pointer
+    // right pointer will be the last element
+    let left = i + 1;
+    let right = nums.length - 1;
+    while (left < right) {
+      // step 4: find the sum of 3 elements
+      const sum = nums[i] + nums[left] + nums[right];
       if (Math.abs(target - sum) < Math.abs(target - closest)) {
-        closest = sum;
+        // if the sum is closer to the target than the closest sum
+        closest = sum; // update the closest sum
       }
-
       if (sum < target) {
-        i++;
-      } else {
-        j--;
-      }
+        left++;
+      } else right--;
     }
   }
   return closest;
