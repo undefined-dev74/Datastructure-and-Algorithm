@@ -1,4 +1,4 @@
-import { swap } from "~/utils/swap";
+import { swap } from "../utils/swap";
 
 export const quickSort = (
   arr: number[],

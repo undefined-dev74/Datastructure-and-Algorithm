@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 function ChipsInput() {
-  const [chips, setChips] = useState([]);
+  const [chips, setChips] = useState<string[]>([]);
   const [value, setValue] = useState("");
 
-  const handleKeyDown = (e) => {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       if (value.length > 0) {
         setChips((prev) => [...prev, value]);
@@ -13,8 +13,8 @@ function ChipsInput() {
     }
   };
 
-  const handleChipClose = (idx) => {
-    setChips(chips.filter((chip, i) => i !== idx));
+  const handleChipClose = (idx: number) => {
+    setChips(chips.filter((_, i) => i !== idx));
   };
 
   return (
