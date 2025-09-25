@@ -41,6 +41,7 @@ import { rearrangeArray } from "./leetcode/rearrangeArray";
 import { removeElement } from "./leetcode/remove-element";
 
 import "./algo/findAndPrintUniqueValueCount";
+import CodeWithMik from "./code-with-mik/CodeWithMik";
 import { repeatedSubstringPattern } from "./leetcode/repeatedSubstringPattern";
 import { reverseInteger } from "./leetcode/reverseInteger";
 import { searchInsert } from "./leetcode/searchElement";
@@ -52,6 +53,7 @@ import {
 import { unionIntersection } from "./leetcode/unionIntersection";
 import { unionOfSortedArray } from "./leetcode/unionOfSortedArray";
 import Practice from "./practice";
+import SanketPlaylist from "./sanket-playlist/SanketPlaylist";
 import SortingVisualizer from "./views/SortingVisualizer";
 
 function App() {
@@ -165,6 +167,8 @@ function App() {
     <>
       <SortingVisualizer />
       <Practice />
+      <SanketPlaylist />
+      <CodeWithMik />
       <h1>Vite + React</h1>
       <h5>
         Radix Sort{" "}
